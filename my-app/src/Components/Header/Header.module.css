@@ -2,13 +2,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    position: fixed;
+   /* position: fixed;*/
     right: 7%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 .headerLogo {
     width: 20%;
 }
+
 .navMenu {
     flex-grow: 1;
     display: flex;

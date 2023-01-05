@@ -6,13 +6,13 @@ import Slider from "./Components/Slider/Slider";
 import {BrowserRouter} from "react-router-dom";
 import Content from "./Components/Content/Content";
 
-function App() {
+function App(props) {
     return (
         <BrowserRouter>
             <div className="App container">
                 <Header/>
                 <Slider/>
-                <Content/>
+                <Content gameArr={props.gameArr}/>
                 <Footer/>
             </div>
         </BrowserRouter>

@@ -4,22 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fba0b2b-ae30-4253-acb6-3f28f6ef2cec" name="Changes" comment="react tutorial done">
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/Content.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/Content.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/GameItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/GameItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Footer/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Footer/Footer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Slider/Slider.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Slider/Slider.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/test/Comp2.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/test/React.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/test/react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6fba0b2b-ae30-4253-acb6-3f28f6ef2cec" name="Changes" comment="MaxRoll copy started">
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/Diablo2/Diablo2.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/Diablo3/Diablo3.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/PathOfExile/PathOfExile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/GameItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/GameItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/test/Comp2.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/test/React.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/test/react.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <workItem from="1672171956541" duration="16000" />
       <workItem from="1672179905120" duration="767000" />
       <workItem from="1672666114484" duration="671000" />
-      <workItem from="1672925561232" duration="22244000" />
+      <workItem from="1672925561232" duration="33093000" />
     </task>
     <task id="LOCAL-00001" summary="react tutorial done">
       <created>1671997927477</created>
@@ -122,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671997958262</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="MaxRoll copy started">
+      <created>1672948525252</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672948525252</updated>
+    </task>
+    <task id="LOCAL-00004" summary="MaxRoll copy started">
+      <created>1672948576151</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672948576151</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react tutorial done" />
-    <option name="LAST_COMMIT_MESSAGE" value="react tutorial done" />
+    <MESSAGE value="MaxRoll copy started" />
+    <option name="LAST_COMMIT_MESSAGE" value="MaxRoll copy started" />
   </component>
 </project>
