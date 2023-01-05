@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fba0b2b-ae30-4253-acb6-3f28f6ef2cec" name="Changes" comment="react tutorial done" />
+    <list default="true" id="6fba0b2b-ae30-4253-acb6-3f28f6ef2cec" name="Changes" comment="react tutorial done">
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/Content.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/Content.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/GameItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/GameItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Footer/Footer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Header/Header.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Slider/Slider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Slider/Slider.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/test/Comp2.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/test/React.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/test/react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,14 +60,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/aggromarus/Рабочий стол/папка с дз/vueRepo",
+    "last_opened_file_path": "/home/aggromarus/Рабочий стол/папка с дз/react_test/my-app/src/Components/Content/GameItem",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "editing.templates",
     "ts.external.directory.path": "/snap/webstorm/294/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -60,6 +76,19 @@
     <force-push-targets>
       <force-push-target remote-path="origin" branch="game_react_study" />
     </force-push-targets>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/src/Components/Content/GameItem" />
+      <recent name="$PROJECT_DIR$/my-app" />
+      <recent name="$PROJECT_DIR$/my-app/src/Components/Footer" />
+      <recent name="$PROJECT_DIR$/my-app/src/Components/Content" />
+      <recent name="$PROJECT_DIR$/my-app/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/src" />
+      <recent name="$PROJECT_DIR$/another_app/src/test" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,7 +100,13 @@
       <updated>1671223382368</updated>
       <workItem from="1671223383403" duration="38000" />
       <workItem from="1671399219363" duration="261000" />
-      <workItem from="1671978671336" duration="13429000" />
+      <workItem from="1671978671336" duration="14161000" />
+      <workItem from="1672083938942" duration="95000" />
+      <workItem from="1672084672296" duration="5184000" />
+      <workItem from="1672171956541" duration="16000" />
+      <workItem from="1672179905120" duration="767000" />
+      <workItem from="1672666114484" duration="671000" />
+      <workItem from="1672925561232" duration="22244000" />
     </task>
     <task id="LOCAL-00001" summary="react tutorial done">
       <created>1671997927477</created>

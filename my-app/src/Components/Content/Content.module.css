@@ -1,0 +1,17 @@
+.wrapper {
+    height: 50vh;
+    background-image: url(./img/game-selector2-bg-2000x1440.jpg);
+    background-size: 100%;
+}
+.textSpan {
+    font-size: 60px;
+    color: #057af0;
+    text-transform: uppercase;
+    margin: 50px 0 75px 0;
+}
+.gameSelection {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}

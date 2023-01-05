@@ -1,0 +1,6 @@
+.wrapper {
+        margin: 0 auto;
+    }
+a.activeLink {
+    color: red;
+}
