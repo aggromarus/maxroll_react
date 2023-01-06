@@ -6,7 +6,7 @@ const Header = (props) => {
         <div className={style.wrapper}>
             <div>
                 <h1>
-                    <a href="https://ya.ru">
+                    <a href="/">
                         <img src="https://about.gitlab.com/images/press/logo/preview/gitlab-logo-200-preview.png"
                              alt="logo"
                              className={style.headerLogo}/>

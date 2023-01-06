@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fba0b2b-ae30-4253-acb6-3f28f6ef2cec" name="Changes" comment="MaxRoll copy started">
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/Diablo2/Diablo2.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/Diablo3/Diablo3.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/PathOfExile/PathOfExile.jsx" afterDir="false" />
+    <list default="true" id="6fba0b2b-ae30-4253-acb6-3f28f6ef2cec" name="Changes" comment="добавил динамическую отрисовку меню игр и вынес логику в index.js пока что">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/GameItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Content/GameItem/GameItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/test/Comp2.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/test/React.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/test/react.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/aggromarus/Рабочий стол/папка с дз/react_test/my-app/src/Components/Content/GameItem",
+    "last_opened_file_path": "/home/aggromarus/Рабочий стол/fd",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -104,7 +93,7 @@
       <workItem from="1672171956541" duration="16000" />
       <workItem from="1672179905120" duration="767000" />
       <workItem from="1672666114484" duration="671000" />
-      <workItem from="1672925561232" duration="33093000" />
+      <workItem from="1672925561232" duration="36279000" />
     </task>
     <task id="LOCAL-00001" summary="react tutorial done">
       <created>1671997927477</created>
@@ -134,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672948576151</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="добавил динамическую отрисовку меню игр и вынес логику в index.js пока что">
+      <created>1672961030770</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672961030770</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +162,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react tutorial done" />
     <MESSAGE value="MaxRoll copy started" />
-    <option name="LAST_COMMIT_MESSAGE" value="MaxRoll copy started" />
+    <MESSAGE value="добавил динамическую отрисовку меню игр и вынес логику в index.js пока что" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил динамическую отрисовку меню игр и вынес логику в index.js пока что" />
   </component>
 </project>
