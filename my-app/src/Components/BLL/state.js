@@ -12,6 +12,7 @@ let state = {
         {id: 3, message: 'Some message3', likesCount: 3},
         {id: 4, message: 'Some message4', likesCount: 4}
     ],
+    newPostText: ''
 }
 
 export let addPost = (addComment) => {
@@ -23,5 +24,11 @@ export let addPost = (addComment) => {
     state.posts.push(newComment);
     renderTree(state)
 }
+
+export let updateNewPostText = (newText) => {
+    state.newPostText = newText;
+    renderTree(state);
+}
+
 
 export default state

@@ -7,18 +7,25 @@ const Diablo2 = (props) => {
         return <Post message={post.message}/>
     })
     let newComment = React.createRef();
-    console.log(props)
     let addComment = () => {
         let text = newComment.current.value;
         props.addPost(text);
-        newComment.current.value = ''
+        props.updateNewPostText('');
+    }
+
+    let onChange = () => {
+        let text = newComment.current.value;
+        props.updateNewPostText(text);
     }
     return (
         <div>
             <h3>{props.state.game[0].title}</h3>
-            <textarea ref={newComment}/>
-            <button onClick={addComment}>Add message
-            </button>
+            <textarea onChange={onChange}
+                      ref={newComment}
+                      value={props.state.newPostText}
+
+            />
+            <button onClick={addComment}>Add message</button>
             <div className={style.comments}>
                 {renderComment}
             </div>
