@@ -1,16 +1,18 @@
-.wrapper {
+.headerMenu {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-   /* position: fixed;*/
-    right: 7%;
+    position: fixed;
+    left: 50%;
     width: 100%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.75);
 }
-.headerLogo {
-    width: 20%;
-}
 
+.logo * {
+    fill: #057af0;
+    width: 50%;
+}
 .navMenu {
     flex-grow: 1;
     display: flex;

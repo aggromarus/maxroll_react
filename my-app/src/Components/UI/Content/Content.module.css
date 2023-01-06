@@ -1,6 +1,6 @@
 .wrapper {
     height: 50vh;
-    background-image: url(img/game-selector2-bg-2000x1440.jpg);
+    background-image: url(../../../../public/img/game-selector2-bg-2000x1440.jpg);
     background-size: 100%;
 }
 .textSpan {

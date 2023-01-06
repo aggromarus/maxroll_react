@@ -11,17 +11,16 @@ import Diablo3 from "./Components/UI/Content/GameItem/Diablo3/Diablo3";
 function App(props) {
     return (
         //TODO ререндер хедера в зависимости от компонента. Руками или динамически?
-        //TODO Поставить по умолчанию роутинга главную страницу? +++
+        //TODO добавить общий класс контейнер для элементов страницы
             <div className="App container">
                 <Header/>
                 <Slider/>
                 <Routes>
-                    <Route  path="/d2" element={<Diablo2/>} />
+                    <Route  path="/d2" element={<Diablo2 state={props.appState}/>} />
                     <Route  path="/d3" element={<Diablo3/>} />
                     <Route  path="/Poe" element={<PathOfExile/>} />
                     <Route  path="/" element={<Content gameArr={props.appState}/>} />
                 </Routes>
-                {/*<Content gameArr={props.appState}/>*/}
                 <Footer/>
             </div>
     );

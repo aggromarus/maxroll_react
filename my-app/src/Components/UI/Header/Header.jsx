@@ -1,15 +1,14 @@
 import React from "react";
 import style from './Header.module.css'
+import {ReactComponent as SvgLogo} from "../../../Assets/logo.svg";
 
 const Header = (props) => {
     return <div>
-        <div className={style.wrapper}>
+        <div className={style.headerMenu}>
             <div>
                 <h1>
                     <a href="/">
-                        <img src="https://about.gitlab.com/images/press/logo/preview/gitlab-logo-200-preview.png"
-                             alt="logo"
-                             className={style.headerLogo}/>
+                       <SvgLogo className={style.logo}/>
                     </a>
                 </h1>
             </div>

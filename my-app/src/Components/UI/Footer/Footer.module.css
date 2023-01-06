@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 2fr;
-    background-image: url(img/maxroll_footer_2500x514s.jpg);
+    background-image: url(../../../../public/img/maxroll_footer_2500x514s.jpg);
     background-size: 100%;
     color: white;
 }
