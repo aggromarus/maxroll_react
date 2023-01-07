@@ -1,17 +1,20 @@
 .footer_wrapper {
     height: 514px;
-    background-image: url(../../../../public/img/maxroll_footer_2500x514s.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(/public/img/maxroll_footer_2500x514s.jpg) no-repeat center;
     color: white;
 }
 
 .bottom_menu {
         display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr;
+    grid-template-columns: 2fr 1fr 1fr;
 }
 
+.logo * {
+    fill:#057af0;
+}
+.logo {
+    width: 50%;
+}
 .container {
     margin: 0 auto;
     width: 1200px;

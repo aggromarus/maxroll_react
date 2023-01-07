@@ -8,6 +8,6 @@ h3 {
 }
 
 .wrapper {
-    background-image: url(../../../../../../public/img/background_d2_1080p.jpg);
+    background-image: url(/public/img/background_d2_1080p.jpg);
     background-size: 100%;
 }

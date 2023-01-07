@@ -1,6 +1,7 @@
 import React from "react";
 import style from './Header.module.css'
 import {ReactComponent as SvgLogo} from "../../../Assets/logo.svg";
+import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
     return <div className={style.header_wrapper}>
@@ -8,9 +9,9 @@ const Header = (props) => {
             <div className={`${style.app_header} ${style.container}`}>
                 <div>
                     <h1>
-                        <a href="/">
+                        <NavLink to="/">
                             <SvgLogo className={style.logo}/>
-                        </a>
+                        </NavLink>
                     </h1>
                 </div>
                 <div className={style.nav_menu}>
