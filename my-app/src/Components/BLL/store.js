@@ -1,6 +1,5 @@
 import activityReducer from "./activityReducer";
 
-
 const store = {
     _state: {
         communityActivity: {
