@@ -1,5 +1,5 @@
 import './index.css';
-import store from "./Components/BLL/state";
+import store from "./Components/BLL/store";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

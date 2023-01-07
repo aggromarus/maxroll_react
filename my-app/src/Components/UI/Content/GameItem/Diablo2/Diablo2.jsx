@@ -2,7 +2,7 @@ import React from "react";
 import Post from "../Comments/Post";
 import style from '../Comments/Post.module.css'
 import {addPostActionCreator, updatePostActionCreator} from "../../../../BLL/activityReducer";
-
+//для коммита
 const Diablo2 = (props) => {
     let renderComment = props.state.communityActivity.posts.map((post) => {
         return <Post message={post.message}/>
