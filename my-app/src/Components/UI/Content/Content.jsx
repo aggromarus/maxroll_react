@@ -9,9 +9,11 @@ const Content = (props) => {
 
     return (
         <div className={style.wrapper}>
-            <div><span className={style.textSpan}>Choose a game</span></div>
-            <div className={style.gameSelection}>
-                {renderItem}
+            <div className={style.container}>
+                <div><span className={style.textSpan}>Choose a game</span></div>
+                <div className={style.gameSelection}>
+                    {renderItem}
+                </div>
             </div>
         </div>
     );

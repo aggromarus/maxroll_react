@@ -1,6 +1,7 @@
 import React from "react";
 import Post from "../Comments/Post";
 import style from '../Comments/Post.module.css'
+import {addPostActionCreator, updatePostActionCreator} from "../../../../BLL/state";
 
 const Diablo2 = (props) => {
     let renderComment = props.state.posts.map((post) => {
@@ -9,15 +10,16 @@ const Diablo2 = (props) => {
     let newComment = React.createRef();
     let addComment = () => {
         let text = newComment.current.value;
-        props.dispatch( {type: 'ADD-POST'});
+        props.dispatch(addPostActionCreator(text));
     }
 
     let onChange = () => {
         let text = newComment.current.value;
-        props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text});
+        let action = updatePostActionCreator(text)
+        props.dispatch(action);
     }
     return (
-        <div>
+        <div className={style.wrapper}>
             <h3>{props.state.game[0].title}</h3>
             <textarea onChange={onChange}
                       ref={newComment}

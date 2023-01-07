@@ -1,3 +1,6 @@
+const addPost = 'ADD-POST';
+const updateNewPost = 'UPDATE-NEW-POST-TEXT'
+
 const store = {
     _state: {
         game: [
@@ -5,19 +8,19 @@ const store = {
                 id: 1,
                 name: 'd2',
                 title: 'Diablo II',
-                img: 'https://media.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2147483647&v=beta&t=J3kUMZwIphc90TFKH5oOO9Sa9K59fimgJf-s_okU3zs'
+                img: 'https://assets.maxroll.gg/wp-content/assets/img/d2r-banner-240x320.jpg'
             },
             {
                 id: 2,
                 name: 'd3',
                 title: 'Diablo III',
-                img: 'https://media.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2147483647&v=beta&t=J3kUMZwIphc90TFKH5oOO9Sa9K59fimgJf-s_okU3zs'
+                img: 'https://assets.maxroll.gg/wp-content/assets/img/d3-banner-240x320.jpg'
             },
             {
                 id: 3,
                 name: 'Poe',
                 title: 'Path of Exile',
-                img: 'https://media.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2147483647&v=beta&t=J3kUMZwIphc90TFKH5oOO9Sa9K59fimgJf-s_okU3zs'
+                img: 'https://assets.maxroll.gg/wp-content/assets/img/poe-banner-240x320.jpg'
             },
         ],
         posts: [
@@ -38,24 +41,8 @@ const store = {
         this._renderTree = observer;
     },
 
-    /*
-        addPost() {
-            let newComment = {
-                id: 5,
-                message: this._state.newPostText,
-                likesCount: 0
-            };
-            this._state.posts.push(newComment);
-            this._renderTree(this._state)
-        },
-        updateNewPostText(newText) {
-            this._state.newPostText = newText;
-            this._renderTree(this._state);
-        },
-    */
-
     dispatch(action) { //action = { }
-        if (action.type === 'ADD-POST') {
+        if (action.type === addPost) {
             let newComment = {
                 id: 5,
                 message: this._state.newPostText,
@@ -64,12 +51,15 @@ const store = {
             this._state.posts.push(newComment);
             this._state.newPostText = '';
             this._renderTree(this._state)
-        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+        } else if (action.type === updateNewPost) {
             this._state.newPostText = action.newText;
             this._renderTree(this._state);
         }
 
     }
 }
-
+export const addPostActionCreator = () => ({type:addPost});
+export const updatePostActionCreator = (text) => {
+    return { type: updateNewPost, newText: text}
+}
 export default store

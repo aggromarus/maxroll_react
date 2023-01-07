@@ -13,17 +13,18 @@ function App(props) {
     return (
         //TODO ререндер хедера в зависимости от компонента. Руками или динамически?
         //TODO добавить общий класс контейнер для элементов страницы
-        <div className="App container">
+        <div className="App">
             <Header/>
             <Slider/>
             <Routes>
-                <Route path="/d2" element={<Diablo2 state={props.appState}
+                <Route path="/d2" element={<Diablo2 state={props.state}
                                                     dispatch={props.dispatch}/>}/>
                 <Route path="/d3" element={<Diablo3/>}/>
                 <Route path="/Poe" element={<PathOfExile/>}/>
-                <Route path="/" element={<Content gameArr={props.appState}/>}/>
+                <Route path="/" element={<Content gameArr={props.state}/>}/>
             </Routes>
-            <Footer/>
+            <Footer state={props.state}
+                    dispatch={props.dispatch}/>
         </div>
     );
 }
