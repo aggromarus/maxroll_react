@@ -1,6 +1,21 @@
 import './index.css';
-import {renderTree} from "./render";
-import state from "./Components/BLL/state";
+import store from "./Components/BLL/state";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App.js';
+import {BrowserRouter} from "react-router-dom";
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+let renderTree = (state) => {
+    root.render(
+        <BrowserRouter>
+            <App appState={store.getState()}
+                 addPost={store.addPost.bind(store)}
+                 updateNewPostText={store.updateNewPostText.bind(store)}/>
+        </BrowserRouter>
+    );
+}
 
-renderTree(state);
+renderTree(store.getState());
+store.subscribe(renderTree);
