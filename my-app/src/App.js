@@ -18,8 +18,7 @@ function App(props) {
             <Slider/>
             <Routes>
                 <Route path="/d2" element={<Diablo2 state={props.appState}
-                                                    addPost={props.addPost}
-                                                    updateNewPostText={props.updateNewPostText}/>}/>
+                                                    dispatch={props.dispatch}/>}/>
                 <Route path="/d3" element={<Diablo3/>}/>
                 <Route path="/Poe" element={<PathOfExile/>}/>
                 <Route path="/" element={<Content gameArr={props.appState}/>}/>

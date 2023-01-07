@@ -28,27 +28,47 @@ const store = {
         ],
         newPostText: ''
     },
+    _renderTree() {
+        console.log('renderTree method')
+    },
     getState() {
         return this._state
     },
-    _renderTree() {
-        console.log('123')
-    },
-    addPost(addComment) {
-        let newComment = {
-            id: 5,
-            message: addComment,
-            likesCount: 0
-        };
-        this._state.posts.push(newComment);
-        this._renderTree(this._state)
-    },
-    updateNewPostText(newText) {
-        this._state.newPostText = newText;
-        this._renderTree(this._state);
-    },
     subscribe(observer) {
         this._renderTree = observer;
+    },
+
+    /*
+        addPost() {
+            let newComment = {
+                id: 5,
+                message: this._state.newPostText,
+                likesCount: 0
+            };
+            this._state.posts.push(newComment);
+            this._renderTree(this._state)
+        },
+        updateNewPostText(newText) {
+            this._state.newPostText = newText;
+            this._renderTree(this._state);
+        },
+    */
+
+    dispatch(action) { //action = { }
+        if (action.type === 'ADD-POST') {
+            let newComment = {
+                id: 5,
+                message: this._state.newPostText,
+                likesCount: 0
+            };
+            this._state.posts.push(newComment);
+            this._state.newPostText = '';
+            this._renderTree(this._state)
+        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+            this._state.newPostText = action.newText;
+            this._renderTree(this._state);
+        }
+
     }
 }
 

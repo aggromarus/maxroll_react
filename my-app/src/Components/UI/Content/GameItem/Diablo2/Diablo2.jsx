@@ -9,13 +9,12 @@ const Diablo2 = (props) => {
     let newComment = React.createRef();
     let addComment = () => {
         let text = newComment.current.value;
-        props.addPost(text);
-        props.updateNewPostText('');
+        props.dispatch( {type: 'ADD-POST'});
     }
 
     let onChange = () => {
         let text = newComment.current.value;
-        props.updateNewPostText(text);
+        props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text});
     }
     return (
         <div>

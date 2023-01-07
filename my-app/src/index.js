@@ -10,9 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 let renderTree = (state) => {
     root.render(
         <BrowserRouter>
-            <App appState={store.getState()}
-                 addPost={store.addPost.bind(store)}
-                 updateNewPostText={store.updateNewPostText.bind(store)}/>
+            <App appState={state}
+                 dispatch={store.dispatch.bind(store)}/>
         </BrowserRouter>
     );
 }
