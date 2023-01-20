@@ -2,9 +2,9 @@ import React from "react";
 import Post from "../Comments/Post";
 import style from '../Comments/Post.module.css'
 import {addPostActionCreator, updatePostActionCreator} from "../../../../BLL/activityReducer";
-//для коммита
+
 const Diablo2 = (props) => {
-    let renderComment = props.state.communityActivity.posts.map((post) => {
+    let renderComment = props.state.activity.posts.map((post) => {
         return <Post message={post.message}/>
     })
     let newComment = React.createRef();
@@ -20,10 +20,10 @@ const Diablo2 = (props) => {
     }
     return (
         <div className={style.wrapper}>
-            <h3>{props.state.contentList.game[0].title}</h3>
+            <h3>{props.state.content.game[0].title}</h3>
             <textarea onChange={onChange}
                       ref={newComment}
-                      value={props.state.communityActivity.newPostText}
+                      value={props.state.activity.newPostText}
 
             />
             <button onClick={addComment}>Add message</button>

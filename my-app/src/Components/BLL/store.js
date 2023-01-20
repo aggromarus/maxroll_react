@@ -1,4 +1,5 @@
 import activityReducer from "./activityReducer";
+import contentReducer from "./contentReducer";
 
 const store = {
     _state: {

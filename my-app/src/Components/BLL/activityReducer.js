@@ -1,7 +1,16 @@
 const addPost = 'ADD-POST';
 const updateNewPost = 'UPDATE-NEW-POST-TEXT'
 
-const activityReducer = (state, action) => {
+let preLoaderReducer = {
+    posts: [
+        {id: 1, message: 'Some message', likesCount: 0},
+        {id: 2, message: 'Some message2', likesCount: 2},
+        {id: 3, message: 'Some message3', likesCount: 3},
+        {id: 4, message: 'Some message4', likesCount: 4}
+    ],
+    newPostText: 'test text'
+};
+const activityReducer = (state = preLoaderReducer, action) => {
     switch (action.type) {
         case addPost:
             let newComment = {

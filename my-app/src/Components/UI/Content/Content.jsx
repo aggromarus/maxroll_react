@@ -3,7 +3,7 @@ import style from './Content.module.css'
 import GameItem from "./GameItem/GameItem";
 
 const Content = (props) => {
-    let renderItem = props.gameArr.contentList.game.map((game) => {
+    let renderItem = props.gameArr.content.game.map((game) => {
         return <GameItem id={game.id} name={game.name} title={game.title} img={game.img}/>
     });
 

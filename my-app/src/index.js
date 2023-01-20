@@ -1,5 +1,5 @@
 import './index.css';
-import store from "./Components/BLL/store";
+import store from "./Components/BLL/redux-store";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -15,6 +15,9 @@ let renderTree = (state) => {
         </BrowserRouter>
     );
 }
-//blablabla
+
 renderTree(store.getState());
-store.subscribe(renderTree);
+store.subscribe( () => {
+    let state = store.getState();
+    renderTree(state);
+});
