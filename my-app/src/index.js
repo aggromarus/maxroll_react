@@ -7,17 +7,16 @@ import App from './App.js';
 import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let renderTree = (state) => {
+let renderTree = () => {
     root.render(
         <BrowserRouter>
-            <App state={state}
-                 dispatch={store.dispatch.bind(store)}/>
+                <App store={store}/>
         </BrowserRouter>
     );
 }
 
 renderTree(store.getState());
-store.subscribe( () => {
+store.subscribe(() => {
     let state = store.getState();
     renderTree(state);
 });

@@ -1,35 +1,20 @@
 import React from "react";
-import Post from "../Comments/Post";
 import style from '../Comments/Post.module.css'
-import {addPostActionCreator, updatePostActionCreator} from "../../../../BLL/activityReducer";
-
+import {NavLink, Route, Routes} from "react-router-dom";
+import Comments from "../Comments/Comments";
+//TODO починить route для d2 и comments
+//{D2} используем как презентационную компоненту для {Comments}
 const Diablo2 = (props) => {
-    let renderComment = props.state.activity.posts.map((post) => {
-        return <Post message={post.message}/>
-    })
-    let newComment = React.createRef();
-    let addComment = () => {
-        let text = newComment.current.value;
-        props.dispatch(addPostActionCreator(text));
-    }
-
-    let onChange = () => {
-        let text = newComment.current.value;
-        let action = updatePostActionCreator(text)
-        props.dispatch(action);
-    }
+    console.log(props)
     return (
         <div className={style.wrapper}>
-            <h3>{props.state.content.game[0].title}</h3>
-            <textarea onChange={onChange}
-                      ref={newComment}
-                      value={props.state.activity.newPostText}
-
-            />
-            <button onClick={addComment}>Add message</button>
-            <div className={style.comments}>
-                {renderComment}
-            </div>
+            <NavLink to={'/d2/comments'}>
+                comments
+                <img src="https://assets.maxroll.gg/wp-content/assets/img/d2r-banner-240x320.jpg" alt="123"/>
+            </NavLink>
+            <Routes><Route path="/comments" element={<Comments state={props.store.getState()}
+                                                               dispatch={props.store.dispatch}/>
+            }/></Routes>
         </div>
     );
 };

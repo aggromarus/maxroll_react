@@ -11,20 +11,18 @@ import Diablo3 from "./Components/UI/Content/GameItem/Diablo3/Diablo3";
 
 function App(props) {
     return (
-        //TODO ререндер хедера в зависимости от компонента. Руками или динамически?
-        //TODO добавить общий класс контейнер для элементов страницы
+        //TODO ре рендер хедера в зависимости от компонента. Руками или динамически?
+        //TODO добавить общий класс контейнер для элементов страницы-css
         <div className="App">
             <Header/>
             <Slider/>
             <Routes>
-                <Route path="/d2" element={<Diablo2 state={props.state}
-                                                    dispatch={props.dispatch}/>}/>
+                <Route path="/d2/*" element={<Diablo2 store={props.store}/>}/>
                 <Route path="/d3" element={<Diablo3/>}/>
                 <Route path="/Poe" element={<PathOfExile/>}/>
-                <Route path="/" element={<Content gameArr={props.state}/>}/>
+                <Route path="/" element={<Content state={props.store.getState()}/>}/>
             </Routes>
-            <Footer state={props.state}
-                    dispatch={props.dispatch}/>
+            <Footer/>
         </div>
     );
 }

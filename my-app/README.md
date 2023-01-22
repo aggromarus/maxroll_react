@@ -1,3 +1,7 @@
+# Original website https://maxroll.gg/
+
+# link to MIRO https://miro.com/app/board/uXjVPvsKv9c=/?share_link_id=753582891982
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
