@@ -12,18 +12,22 @@ let preLoaderReducer = {
 };
 const activityReducer = (state = preLoaderReducer, action) => {
     switch (action.type) {
-        case addPost:
+        case addPost: {
             let newComment = {
                 id: 5,
                 message: state.newPostText,
                 likesCount: 0
             };
-            state.posts.push(newComment);
-            state.newPostText = '';
-            return state;
+            let stateCopy = {...state};
+            stateCopy.posts = [...state.posts];
+            stateCopy.posts.push(newComment);
+            stateCopy.newPostText = '';
+            return stateCopy;
+        }
         case updateNewPost:
-            state.newPostText = action.newText;
-            return state;
+            let stateCopy = {...state};
+            stateCopy.newPostText = action.newText;
+            return stateCopy;
         default:
             return state;
     }

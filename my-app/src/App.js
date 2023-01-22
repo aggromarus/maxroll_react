@@ -17,10 +17,10 @@ function App(props) {
             <Header/>
             <Slider/>
             <Routes>
-                <Route path="/d2/*" element={<Diablo2 store={props.store}/>}/>
+                <Route path="/d2/*" element={<Diablo2 />}/>
                 <Route path="/d3" element={<Diablo3/>}/>
                 <Route path="/Poe" element={<PathOfExile/>}/>
-                <Route path="/" element={<Content state={props.store.getState()}/>}/>
+                <Route path="/" element={<Content state={props.state}/>}/>
             </Routes>
             <Footer/>
         </div>
