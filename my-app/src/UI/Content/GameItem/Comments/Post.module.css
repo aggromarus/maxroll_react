@@ -1,0 +1,18 @@
+
+h3 {
+    color: darkolivegreen;
+}
+
+.comments {
+    color: green;
+}
+
+.wrapper {
+    background: url(/public/img/background_d2_1080p.jpg) no-repeat 0 0 fixed;
+    background-size: 100%;
+}
+
+.small__img {
+    width: 20%;
+}
+
